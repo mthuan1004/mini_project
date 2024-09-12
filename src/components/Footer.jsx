@@ -19,37 +19,16 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-green-600 font-bold mb-4">Quick Links</h3>
-            <ul className="flex flex-col space-y-2 text-gray-600 font-semibold">
-              <li>
-                <Link to="/privacy-policy" className="hover:text-red-600">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link to="/term-service" className="hover:text-red-600">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="hover:text-red-600">
-                  About Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-green-600 font-bold mb-4">Contact Us</h3>
+            <h3 className="text-green-600 font-bold mb-4">Liên hệ</h3>
             <ul className="flex flex-col space-y-2 text-gray-600">
               <li>Email: support@gmail.com</li>
               <li>Phone: +84 78 888 8888</li>
-              <li>Address: 180 Cao Lo, Ward 4, District 8, Ho Chi Minh City</li>
+              <li>Address: Ho Chi Minh City</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-green-600 text-center font-bold mb-4">Follow Us</h3>
+            <h3 className="text-green-600 text-center font-bold mb-4">Theo dõi chúng tôi</h3>
             <div className="flex justify-center gap-4">
               <a
                 href="https://google.com"
@@ -77,7 +56,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-4 text-center text-gray-600 font-bold">
-          © 2024 TK Hotels. All rights reserved.
+          © 2024 VIERICE QUALITY Company. All rights reserved.
         </div>
       </div>
     </footer>
