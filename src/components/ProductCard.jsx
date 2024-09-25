@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
+import { useNavigate } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleContactClick = () => {
+    navigate('/contact'); // Navigate to contact page on button click
+  };
+
   return (
-    <div className="border border-gray-200 p-4 rounded-lg shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 transition-shadow duration-300 ease-in-out flex flex-col">
+    <div className="border border-gray-200 p-4 rounded-lg shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 transition-shadow duration-300 ease-in-out flex flex-col h-full">
       <div className="flex justify-center mb-4">
         <img
           src={product.img}
@@ -21,9 +28,14 @@ const ProductCard = ({ product }) => {
         Shape and Color: <br />
         <span className="text-lg font-normal">{product.shapeandcolor}</span>
       </p>
-      <button className="w-full bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-500 transition-colors duration-300 ease-in-out">
-        Add to Cart
-      </button>
+      <div className="flex justify-end mt-4">
+        <button 
+          onClick={handleContactClick} 
+          className="w-32 bg-green-600 text-white font-bold p-2 rounded-lg hover:bg-green-500 transition-colors duration-300 ease-in-out"
+        >
+          Contact
+        </button>
+      </div>
     </div>
   );
 };
@@ -33,7 +45,7 @@ ProductCard.propTypes = {
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     taste: PropTypes.string.isRequired,
-    shapeandcolor: PropTypes.number.isRequired,
+    shapeandcolor: PropTypes.string.isRequired, 
   }).isRequired,
 };
 
