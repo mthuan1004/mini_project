@@ -60,7 +60,7 @@ const Header = () => {
       </button>
 
       {/* Navigation Links */}
-      <nav className={`flex-col md:flex md:flex-row md:space-x-8 absolute right-0 bg-white md:bg-transparent transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:translate-x-0 md:static md:flex-row md:items-center w-full md:w-auto p-2 mt-28`}>
+      <nav className={`flex-col md:flex md:flex-row md:space-x-8 absolute md:static bg-white md:bg-transparent transition-all duration-300 ease-in-out ${isMenuOpen ? 'top-16' : 'top-[-200px]'} md:top-0 md:items-center w-full md:w-auto p-2`}>
         <Link to="/" onClick={() => { smoothScrollTo('top'); setIsMenuOpen(false); }} className="hover:text-green-600 p-2 md:p-0">
           Home
         </Link>
