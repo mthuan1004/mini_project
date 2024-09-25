@@ -20,11 +20,11 @@ const ProductCard = ({ product }) => {
       <h3 className="text-xl text-center font-bold text-gray-800 mb-2">
         {product.name}
       </h3>
-      <p className="mb-2 text-xl font-semibold flex-grow overflow-hidden">
+      <p className="mb-2 text-xl font-semibold flex-grow overflow-hidden text-justify">
         Description Taste: <br />
         <span className="text-lg font-normal">{product.taste}</span>
       </p>
-      <p className="mb-2 text-xl font-semibold flex-grow overflow-hidden">
+      <p className="mb-2 text-xl font-semibold flex-grow overflow-hidden text-justify">
         Shape and Color: <br />
         <span className="text-lg font-normal">{product.shapeandcolor}</span>
       </p>
