@@ -10,9 +10,17 @@ const ProductCard = ({ product }) => {
           className="w-56 h-64 object-cover rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-105"
         />
       </div>
-      <h3 className="text-xl text-center font-bold text-gray-800 mb-2">{product.name}</h3>
-      <p className="text-gray-600 mb-2 text-lg font-semibold flex-grow overflow-hidden">Description: {product.description}</p>
-      <p className="text-green-600 font-bold mb-4 text-lg">Giá: {product.price.toLocaleString()} VND</p>
+      <h3 className="text-xl text-center font-bold text-gray-800 mb-2">
+        {product.name}
+      </h3>
+      <p className="mb-2 text-xl font-semibold flex-grow overflow-hidden">
+        Description Taste: <br />
+        <span className="text-lg font-normal">{product.taste}</span>
+      </p>
+      <p className="mb-2 text-xl font-semibold flex-grow overflow-hidden">
+        Shape and Color: <br />
+        <span className="text-lg font-normal">{product.shapeandcolor}</span>
+      </p>
       <button className="w-full bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-500 transition-colors duration-300 ease-in-out">
         Add to Cart
       </button>
@@ -24,8 +32,8 @@ ProductCard.propTypes = {
   product: PropTypes.shape({
     img: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
+    taste: PropTypes.string.isRequired,
+    shapeandcolor: PropTypes.number.isRequired,
   }).isRequired,
 };
 
