@@ -11,11 +11,11 @@ const ProductCard = ({ product }) => {
         />
       </div>
       <h3 className="text-xl text-center font-bold text-gray-800 mb-2">{product.name}</h3>
-      <p className="text-gray-600 mb-2 text-lg font-semibold flex-grow overflow-hidden">Mô tả: {product.description}</p>
+      <p className="text-gray-600 mb-2 text-lg font-semibold flex-grow overflow-hidden">Description: {product.description}</p>
       <p className="text-green-600 font-bold mb-4 text-lg">Giá: {product.price.toLocaleString()} VND</p>
-      {/* <button className="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300 ease-in-out">
+      <button className="w-full bg-green-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-500 transition-colors duration-300 ease-in-out">
         Add to Cart
-      </button> */}
+      </button>
     </div>
   );
 };

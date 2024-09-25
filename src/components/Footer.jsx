@@ -13,22 +13,21 @@ const Footer = () => {
               VIERICE QUALITY Company
             </Link>
             <p className="text-gray-600 font-semibold mt-4">
-              Công ty của chúng tôi chuyên cung cấp tất cả các loại gạo sạch,
-              chất lượng nhất.
+              Our company specializes in providing all types of clean, high-quality rice.
             </p>
           </div>
 
           <div>
-            <h3 className="text-green-600 font-bold mb-4">Liên hệ</h3>
+            <h3 className="text-green-600 font-bold mb-4">Contact Us</h3>
             <ul className="flex flex-col space-y-2 text-gray-600">
-              <li>Email: support@gmail.com</li>
-              <li>Phone: +84 78 888 8888</li>
-              <li>Address: Ho Chi Minh City</li>
+              <li>Email: viericequalityvn@gmail.com.</li>
+              <li>Phone: +84 907 525 540.</li>
+              <li>Address: <br></br>Cong Hoa Garden, 20 Cong Hoa, Tan Binh, Ho Chi Minh City. <br></br>Ward 5, City. Tan An, Long An province</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-green-600 text-center font-bold mb-4">Theo dõi chúng tôi</h3>
+            <h3 className="text-green-600 text-center font-bold mb-4">Follow Us</h3>
             <div className="flex justify-center gap-4">
               <a
                 href="https://google.com"
@@ -38,7 +37,7 @@ const Footer = () => {
                 <img src={GoogleIcon} alt="Google" className="w-8 h-8" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61565754661233"
                 target="_blank"
                 rel="noopener noreferrer"
               >
