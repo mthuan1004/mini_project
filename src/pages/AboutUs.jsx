@@ -62,6 +62,12 @@ const AboutPage = () => {
                     helps enhance the value, quality of products, services, and customer
                     care.
                 </p>
+                
+                <img
+                    src={Image2}
+                    alt="About Us Image 2"
+                    className="w-full h-auto mb-4 rounded-lg"
+                />
                 <p className="text-lg text-gray-700 mb-4 font-semibold text-justify">
                     Vision: To bring the greatest satisfaction to customers and establish
                     the Vietnamese Rice brand in both domestic and international markets.
@@ -71,11 +77,6 @@ const AboutPage = () => {
                     level, contributing to the sustainable development of agriculture and
                     improving the lives of Vietnamese farmers.
                 </p>
-                <img
-                    src={Image2}
-                    alt="About Us Image 2"
-                    className="w-full h-auto mb-4 rounded-lg"
-                />
             </div>
 
             <div className="fixed bottom-8 right-8 group">
