@@ -1,11 +1,23 @@
 import PropTypes from "prop-types";
-import { useNavigate } from 'react-router-dom';
 
 const ProductCard = ({ product }) => {
-  const navigate = useNavigate(); // Initialize useNavigate
+
+  const smoothScrollTo = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const headerOffset = 100; 
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   const handleContactClick = () => {
-    navigate('/contact'); // Navigate to contact page on button click
+    smoothScrollTo('contact'); 
   };
 
   return (
